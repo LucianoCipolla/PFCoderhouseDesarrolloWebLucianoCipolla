@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Vamor a hacer todos los estilos con sass tratando de no quemarnos la cabeza(vamos de a partes dale que se puede)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luciano Cipolla Delcantare",
+  "license": "ISC"
+}
