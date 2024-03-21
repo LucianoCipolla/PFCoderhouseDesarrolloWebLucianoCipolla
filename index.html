@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruitz</title>
-    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/images/indexImg/icono.png" type="png/x-icon">
 
@@ -18,17 +18,25 @@
         <span>ENVÍO ESTÁNDAR GRATIS EN COMPRAS MAYORES A $60.000 🚚 A TODO ARGENTINA 🇦🇷 PAGA EN CUOTAS SIN INTERÉS CON TARJETAS BANCARIAS 💳</span>
         <span>ENVÍO ESTÁNDAR GRATIS EN COMPRAS MAYORES A $60.000 🚚 A TODO ARGENTINA 🇦🇷 PAGA EN CUOTAS SIN INTERÉS CON TARJETAS BANCARIAS 💳</span>
     </marquee>
-        <header>
-        <nav class="nav" id="nav">
-            <a class="nav__ruitz" href="#home"><img src="./assets/images/indexImg/icono.png" alt=""></a>
-            <ul class="nav__ul">
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#nosotros">Quienes Somos</a></li>
-                <li><a href="#location">Ubicacion</a></li>
-                <li><a href="./pages/contact.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg nav">
+            <div class="container-fluid">
+                <a class="navbar-brand flex-grow-1" href="./index.html"><img class="img-nav" src="./assets/images/indexImg/icono.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link px-3 mx-2" href="#products">Productos</a>
+                        <a class="nav-link px-3 mx-2" href="#nosotros">Quienes somos</a>
+                        <a class="nav-link px-3 mx-2" href="#location">Ubicacion</a>
+                        <a class="nav-link px-3 mx-2" href="./pages/contact.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        </header>
+    </header>
     <main>
         <section class="section__home"  id="home"> 
             <h1><img src="./assets/images/indexImg/iconocarrusel.png" alt=""></h1>
@@ -86,6 +94,6 @@
             <p>Coyright @ 2024 Ruitzbrand</p>
         </footer>
     </main>
-    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

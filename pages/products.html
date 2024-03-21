@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruitz</title>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/images/indexImg/icono.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav class="nav" id="nav">
-            <a class="nav__ruitz" href="#home"><img src="../assets/images/indexImg/icono.png" alt=""></a>
-            <ul class="nav__ul">
-                <li><a href="./products.html">Productos</a></li>
-                <li><a href="./nosotros.html">Quienes Somos</a></li>
-                <li><a href="../index.html#location">Ubicacion</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar sticky-top navbar-expand-lg nav">
+            <div class="container-fluid">
+                <a class="navbar-brand flex-grow-1" href="../index.html"><img class="img-nav" src="../assets/images/indexImg/icono.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link px-3 mx-2" href="./products.html">Productos</a>
+                        <a class="nav-link px-3 mx-2" href="./nosotros.html">Quienes somos</a>
+                        <a class="nav-link px-3 mx-2" href="../index.html#location">Ubicacion</a>
+                        <a class="nav-link px-3 mx-2" href="./contact.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        </header>
+    </header>
     <main class="products">
         <h1 class="products__title">Productos</h1>
         <div class="products__filter--div">
@@ -167,6 +175,6 @@
         </div>
         <p>Coyright @ 2024 Ruitzbrand</p>
     </footer>
-    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
