@@ -1,0 +1,30 @@
+.contact{
+    background: #06022b;
+    padding: 0 30rem 6rem;
+    h1{
+        text-align: center;
+        padding: 4rem;
+        font-size: 48px;
+    }
+
+    &__form{
+        background-color: #000;
+        padding: 6rem;
+        border: #fff solid 1px;
+        border-radius: 1rem;
+
+        input,textarea{
+            width: 100%;
+            margin: 1rem;
+        }
+
+        .send{
+            padding: 1rem 8rem;
+            background-color: #000;
+            border: #fff solid 1px;
+            border-radius: 1rem;
+            color: aliceblue;
+            margin-top: 2rem;
+            }
+        }
+}

@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    .navbar{
+        background-color: #0a043e;
+        color: aliceblue;
+
+        &-nav a{
+            position: relative;
+            color: aliceblue;
+            font-size: 20px;
+
+        &:hover {
+            color: #88f;
+        
+        &::after{
+            width: 100%;
+        }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: whitesmoke;
+            transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    .img-nav{
+        height: 60px;
+    } 
+}
