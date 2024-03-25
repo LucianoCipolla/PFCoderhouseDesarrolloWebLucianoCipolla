@@ -98,6 +98,14 @@ marquee{
             }
         }
 
+        a{
+            height: 100%;
+            @media (max-width:440px){
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        }
+
         div{
             margin: 2rem;
             grid-column: 2/3;
@@ -125,6 +133,10 @@ marquee{
                 padding: 0;
                 width: 70dvw;
             }
+            @media (max-width:440px){
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
         }
 
         @media (min-width: 768px) and (max-width: 1024px){
@@ -150,12 +162,9 @@ marquee{
         .products__buzo--div{
             grid-column: 1/2;
 
-            @media (min-width: 768px) and (max-width: 1024px){
-                height: 50dvh;
-            }
             @media (max-width:440px){
                 grid-column: 1/2;
-                grid-row: 1/2;
+                grid-row: 2/3;
             }
         }
 
