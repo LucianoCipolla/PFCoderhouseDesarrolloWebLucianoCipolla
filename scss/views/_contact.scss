@@ -1,30 +1,94 @@
+@mixin input($width, $height, $background, $borderColor){
+    width: $width;
+    height: $height;
+    border: none;
+    background: $background;
+    border-bottom: $borderColor 1px solid;
+}
+
 .contact{
     background: #06022b;
-    padding: 0 30rem 6rem;
+    padding-bottom: 10rem;
+
     h1{
         text-align: center;
-        padding: 4rem;
+        padding: 4rem 0;
         font-size: 48px;
+
+        @media (max-width:440px){
+            padding: 3rem;                
+            }
     }
 
     &__form{
-        background-color: #000;
+        margin: auto;
+        background: #060135;
         padding: 6rem;
         border: #fff solid 1px;
         border-radius: 1rem;
+        width: 75%;
 
-        input,textarea{
-            width: 100%;
+        
+        @media (max-width:440px){
+        padding: 3rem;
+        width: 90%;
+        }
+
+        .input{
+            @include input(100%,3rem ,transparent, #0e4496);
             margin: 1rem;
+            padding: 1rem;
+            text-decoration: none;
+
+            &:hover{
+                background:#0e4496;
+            }
+            &:focus{
+                background: linear-gradient(to bottom , #060135, #0e4496);
+                outline: none;
+            }
+            @media (max-width:440px){
+                margin: .3rem;                
+                }
+        }
+
+        textarea{
+            @include input(100%,10rem ,transparent, #0e4496);
+            margin: 0 1rem 6rem;
+            resize: none;
+
+            &:hover{
+                background:#0e4496;
+            }
+            &:focus{
+                background: linear-gradient(to bottom , #060135, #0e4496);
+                outline: none;
+            }
+
+            @media (max-width:440px){
+                margin: .3rem;                
+                }
         }
 
         .send{
             padding: 1rem 8rem;
-            background-color: #000;
-            border: #fff solid 1px;
             border-radius: 1rem;
             color: aliceblue;
             margin-top: 2rem;
+            border:  1px #0e4496  solid;
+            background-color: transparent;
+            width: 100%;
+            margin: 0 2rem ;
+
+            
+            &:hover{
+                background:#0e4496;
+            }
+
+            @media (max-width:440px){
+                padding: 1rem 1rem;
+                text-align: center;
+            }
             }
         }
 }
