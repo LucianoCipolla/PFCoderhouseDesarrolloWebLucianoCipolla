@@ -591,6 +591,11 @@ marquee span {
   padding: 1rem;
   color: aquamarine;
 }
+.products__child img {
+  width: 334px;
+  height: 600px;
+  object-fit: cover;
+}
 
 .product {
   text-align: center;
