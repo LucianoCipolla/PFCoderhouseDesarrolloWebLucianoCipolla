@@ -2,14 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Luciano Cipolla">
+    <meta name="keywords" content="ropa street ubrano moda fashion argentina flow">
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Ruitz">
+    <meta property="og:url" content="https://lucianocipolla.github.io/SegundaPreEntregaCoderhouseDesarrolloWeb/">
+    <meta property="og:image" content="https://lucianocipolla.github.io/SegundaPreEntregaCoderhouseDesarrolloWeb/assets/images/indexImg/iconocarrusel.png">
+    <meta property="og:description" content="Somos una nueva marca de ropa llena de energia y afan de superacion con productos de excelente calidad">
+    <meta property="business:contact_data:street_address" content="Av. Colón 1453, X5000EQB ">
+    <meta property="business:contact_data:locality" content="Córdoba">
+    <meta property="business:contact_data:region" content="Cordoba">
+    <meta property="business:contact_data:postal_code" content="5000">
+    <meta property="business:contact_data:country_name" content="Argentina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruitz</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/images/indexImg/icono.png" type="image/x-icon">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg  nav">
             <div class="container-fluid">
@@ -28,23 +41,28 @@
             </div>
         </nav>
     </header>
-
+    
+    <!-- MAIN -->
     <main class="contact">
         <h1>Contacto</h1>
+
+        <!-- FORMULARIO -->
         <form class="contact__form" action="post">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="name">
+            <input class="input" type="text" id="name" name="name">
             <label for="surname">Apellido</label>
-            <input type="text" id="surname" name="surname">
+            <input class="input" type="text" id="surname" name="surname">
             <label for="city">Ciudad</label>
-            <input type="text" id="city" name="city">
+            <input class="input" type="text" id="city" name="city">
             <label for="postalCode">Codigo Postal</label>
-            <input type="text" id="postalCode" name="postalCode">
+            <input class="input" type="text" id="postalCode" name="postalCode">
             <label for="motivo">Motivo</label>
             <textarea name="motivo" id="motivo"></textarea>
             <input class="send" type="submit" name="Enviar">
         </form>
     </main>
+
+    <!-- FOOTER -->
     <footer>
         <div>
             <section  class="section__nosotros">

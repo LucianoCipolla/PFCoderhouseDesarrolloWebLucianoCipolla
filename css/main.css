@@ -132,13 +132,6 @@ footer p {
   margin: 0;
 }
 
-marquee {
-  background-color: #070325;
-}
-marquee span {
-  margin: 0 3rem;
-}
-
 .section__home {
   overflow: hidden;
   height: 60dvh;
@@ -224,6 +217,10 @@ marquee span {
   border-radius: 10%;
   padding: 3rem;
   height: 40rem;
+  transition: padding 0.3s;
+}
+.section__products article img:hover {
+  padding: 1rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .section__products article img {
@@ -338,7 +335,6 @@ marquee span {
 .section__nosotros ul li {
   display: inline-block;
   padding: 5px;
-  margin: 0, 1rem;
 }
 .section__nosotros ul li img {
   height: 7rem;
@@ -349,30 +345,93 @@ marquee span {
 
 .contact {
   background: #06022b;
-  padding: 0 30rem 6rem;
+  padding-bottom: 10rem;
 }
 .contact h1 {
   text-align: center;
-  padding: 4rem;
+  padding: 4rem 0;
   font-size: 48px;
 }
+@media (max-width: 440px) {
+  .contact h1 {
+    padding: 3rem;
+  }
+}
 .contact__form {
-  background-color: #000;
+  margin: auto;
+  background: #060135;
   padding: 6rem;
   border: #fff solid 1px;
   border-radius: 1rem;
+  width: 75%;
 }
-.contact__form input, .contact__form textarea {
+@media (max-width: 440px) {
+  .contact__form {
+    padding: 3rem;
+    width: 90%;
+  }
+}
+.contact__form .input {
   width: 100%;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  border-bottom: #0e4496 1px solid;
   margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+.contact__form .input:hover {
+  background: #0e4496;
+}
+.contact__form .input:focus {
+  background: linear-gradient(to bottom, #060135, #0e4496);
+  outline: none;
+}
+@media (max-width: 440px) {
+  .contact__form .input {
+    margin: 0.3rem;
+  }
+}
+.contact__form textarea {
+  width: 100%;
+  height: 10rem;
+  border: none;
+  background: transparent;
+  border-bottom: #0e4496 1px solid;
+  margin: 0 1rem 6rem;
+  resize: none;
+}
+.contact__form textarea:hover {
+  background: #0e4496;
+}
+.contact__form textarea:focus {
+  background: linear-gradient(to bottom, #060135, #0e4496);
+  outline: none;
+}
+@media (max-width: 440px) {
+  .contact__form textarea {
+    margin: 0.3rem;
+  }
 }
 .contact__form .send {
   padding: 1rem 8rem;
-  background-color: #000;
-  border: #fff solid 1px;
   border-radius: 1rem;
   color: aliceblue;
   margin-top: 2rem;
+  border: 1px #0e4496 solid;
+  background-color: transparent;
+  width: 100%;
+  margin: 0 2rem;
+}
+.contact__form .send:hover {
+  background: #0e4496;
+}
+@media (max-width: 440px) {
+  .contact__form .send {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
 }
 
 .whoWeAre {
@@ -511,6 +570,10 @@ marquee span {
   border: #fff solid 1px;
   border-radius: 20px;
   margin: 1rem;
+  transition: transform 0.3s;
+}
+.products__child:hover {
+  transform: scale(1.05);
 }
 .products__child h3 {
   padding: 1rem;
@@ -519,6 +582,11 @@ marquee span {
 .products__child p {
   padding: 1rem;
   color: aquamarine;
+}
+.products__child img {
+  width: 334px;
+  height: 600px;
+  object-fit: cover;
 }
 
 .product {
